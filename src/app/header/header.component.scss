@@ -1,0 +1,94 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.headerContainer {
+    width: 100%;
+    height: 56px;
+    position:fixed;
+    top: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+
+    z-index: 9999;
+    background-color: #141d2f;
+}
+
+.headerName {
+    margin-left: 120px;
+    font-size: 31px;
+    font-weight: bold;
+}
+
+.aboutmeContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.skillContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolioContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.headerLineAboutme {
+    width: 63px;
+}
+
+.headerLineSkills {
+    width: 63px;
+    margin-left: 35px;
+}
+
+.headerLinePortfolio {
+    width: 66px;
+}
+
+.d-none {
+    display: none;
+
+}
+
+.aboutme {
+    cursor: pointer;
+
+    &:hover {
+        color: #70E61C;
+    }
+}
+
+.skills {
+    margin-left: 35px;
+    margin-right: 35px;
+    cursor: pointer;
+
+    &:hover {
+        color: #70E61C;
+    }
+}
+
+.green {
+    color: #70E61C;
+}
+
+
+.portfolio {
+    cursor: pointer;
+
+    &:hover {
+        color: #70E61C;
+    }
+}
+
+.selectionContainer {
+    display: flex;
+    margin-right: 126px;
+    font-size: 26px;
+}

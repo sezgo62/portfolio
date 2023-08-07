@@ -1,0 +1,24 @@
+<form (submit)="sendMail()" class="contactContainer" ngNativeValidate #myForm>
+
+    <div class="contactTextContainer">
+        <div><img src="assets/img/contactLine.png">
+            <h1>Contact</h1>
+        </div>
+        <span>Got a problem to solve?</span>
+        <span>Contact me through this form, I am interested in hearing you, knowing your ideas and contributing to your
+            projects with my work.</span>
+        <div>Need a Frontend developer? <span class="contactBold">Contact me!</span> </div>
+    </div>
+
+
+    <div class="contactInputContainer">
+
+        <input required class="name" placeholder="Your name" name="name" #nameField>
+        <input required class="email" placeholder="Your mail" name="message" #emailField>
+        <input required class="message" placeholder="Your message" #messageField>
+        <button #buttonField class="sendMessage">Send Message : )</button>
+
+    </div>
+
+
+</form>

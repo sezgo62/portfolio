@@ -1,0 +1,176 @@
+.skillsContainer {
+    height: 100vh;
+    position: relative;
+    top: 570px;
+    height: 40vh;
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.skillsTextContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.iconPool {
+    display: flex;
+    color: white;
+    flex-wrap: wrap;
+    width: 65%;
+    margin-left: 78px;
+}
+
+.iconContainer {
+    display: flex;
+    flex-direction: column;
+    margin-right: 123px;
+    margin-bottom: 75px;
+    align-items: center;
+}
+
+.iconImages {
+    padding-bottom: 10px;
+  
+   
+
+}
+
+
+
+.hvr-wobble-to-top-right {
+@-webkit-keyframes hvr-wobble-to-top-right {
+    16.65% {
+      -webkit-transform: translate(8px, -8px);
+      transform: translate(8px, -8px);
+    }
+    33.3% {
+      -webkit-transform: translate(-6px, 6px);
+      transform: translate(-6px, 6px);
+    }
+    49.95% {
+      -webkit-transform: translate(4px, -4px);
+      transform: translate(4px, -4px);
+    }
+    66.6% {
+      -webkit-transform: translate(-2px, 2px);
+      transform: translate(-2px, 2px);
+    }
+    83.25% {
+      -webkit-transform: translate(1px, -1px);
+      transform: translate(1px, -1px);
+    }
+    100% {
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0);
+    }
+  }
+  @keyframes hvr-wobble-to-top-right {
+    16.65% {
+      -webkit-transform: translate(8px, -8px);
+      transform: translate(8px, -8px);
+    }
+    33.3% {
+      -webkit-transform: translate(-6px, 6px);
+      transform: translate(-6px, 6px);
+    }
+    49.95% {
+      -webkit-transform: translate(4px, -4px);
+      transform: translate(4px, -4px);
+    }
+    66.6% {
+      -webkit-transform: translate(-2px, 2px);
+      transform: translate(-2px, 2px);
+    }
+    83.25% {
+      -webkit-transform: translate(1px, -1px);
+      transform: translate(1px, -1px);
+    }
+    100% {
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0);
+    }
+  }
+}
+
+  .hvr-wobble-to-top-right {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  }
+
+
+  .hvr-wobble-to-top-right:hover, .hvr-wobble-to-top-right:focus, .hvr-wobble-to-top-right:active {
+    -webkit-animation-name: hvr-wobble-to-top-right;
+    animation-name: hvr-wobble-to-top-right;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+  }
+
+
+.iconName {
+    
+}
+
+.connectMe {
+    width: 155px;
+    height: 54px;
+    background-color: #70E61C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 21px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+
+    transition: transform 0.1s ease-out;
+
+    &:hover {
+        transform: scale(1.2);
+        background-color: #9747FF;
+    }
+}
+
+.skillsHeaderText {
+    margin-bottom: 30px;
+    font-size: 87px;
+    font-weight: bold;
+
+}
+
+.skillText {
+    margin-bottom: 50px;
+    margin-right: 40px;
+    text-align: end;
+}
+
+.skillsHeaderContainer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.skillsLine {
+    margin-left: 40px;
+}
+
+
+
+
+
+/////////////////////////////////////
+/// 
+/// 
+/// 
+

@@ -1,0 +1,21 @@
+.contactContainer {
+    height: 100vh;
+    position: relative;
+    top: 2700px;
+}
+
+.contactTextContainer {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.contactBold {
+    font-weight: bold;
+}
+
+.contactInputContainer {
+    display: flex;
+    flex-direction: column;
+    
+}

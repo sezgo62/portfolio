@@ -1,0 +1,70 @@
+.introductionContainer {
+    //height: 100vh;
+    position: relative;
+    top: 340px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.introductionTextContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+}
+
+.aboutMe {
+    font-size: 92px;
+    font-weight: bold;
+    margin-bottom: 48px;
+}
+
+.selfDescription {
+    margin-bottom: 30px;
+}
+
+.howItStarted {
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.lightbulb {
+    height: 54px;
+    margin-right: 40px;
+}
+
+.puzzle {
+    height: 54px;
+    margin-right: 40px;
+}
+
+.personalThings2 {
+    display: flex;
+}
+
+.roundContainer {
+    border-radius: 100%;
+    border: 3px solid #70E61C;
+    width: 300px;
+    height: 300px;
+}
+
+.introductionContainerImage {
+    display: flex;
+    align-items: center;
+}
+
+.lineImage {}
+
+.testContainer {
+    display: flex;
+    align-items: center;
+}
+
+.profilePicture {
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+}

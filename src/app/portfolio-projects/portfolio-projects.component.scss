@@ -1,0 +1,156 @@
+.portfolioHeaderContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 148px;
+}
+
+.portfolioProjectsBody {
+    position: relative;
+    top: 816px;
+}
+
+.test {
+    height: 100vh;
+}
+
+.portfolioLine1 {
+    height: 6px;
+}
+
+.portfolioLine2 {
+    height: 6px;
+    width: 34%;
+}
+
+.portfolioText {
+    margin-right: 30px;
+    margin-left: 30px;
+    color: white;
+    font-size: 90px;
+    font-weight: bold;
+}
+
+.portfolioHeader {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.portfolioHeaderText {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.livesTest {
+    width: 155px;
+    height: 54px;
+    background-color:#9747FF ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 21px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 40px;
+
+    transition: transform 0.1s ease-out;
+
+    &:hover {
+        background-color: #70E61C;
+    }
+}
+
+.gitHub {
+    width: 155px;
+    height: 54px;
+    border: solid 1px #70E61C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 21px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+
+    transition: transform 0.1s ease-out;
+
+    &:hover {
+        
+        background-color: #70E61C;
+    }
+}
+
+.project1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 228px;
+}
+
+.elpolloProjectImage {
+    width: 343px;
+    height: 225px;
+    margin-right: 20%;
+    margin-left: 10%;
+}
+
+.joinProject {
+    width: 343px;
+    height: 225px;
+    margin-right: 1%;
+    margin-left: 10%;
+}
+
+.ringProjectImage {
+    width: 343px;
+    height: 225px;
+    margin-right: 20%;
+    margin-left: 10%;
+}
+
+.quizProjectImage {
+    width: 343px;
+    height: 225px;
+    margin-right: 1%;
+    margin-left: 10%;
+}
+
+.pokeProjectImage{
+    width: 343px;
+    height: 225px;
+    margin-right: 20%;
+    margin-left: 10%;
+}
+
+.ProjectText {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons {
+    display: flex;
+}
+
+.projectTitle {
+    margin-bottom: 30px;
+    color: #9747FF;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.projectRequirements {
+    margin-bottom: 30px;
+    color: #70E61C;
+}
+
+.projectDescription {
+    margin-bottom: 50px;
+    color: white;
+}
+
+.projectContainer {
+    margin-left: 40px;
+
+}

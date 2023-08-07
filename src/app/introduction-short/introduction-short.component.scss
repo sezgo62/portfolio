@@ -1,0 +1,131 @@
+.introductionShortContainer {
+    height: 100vh;
+    position: relative;
+    top: 100px;
+    width: 100%;
+}
+
+.mainShadows {
+    width: 682px;}
+
+.introductionShortContainer {
+    display: flex;
+}
+
+.socialMediaContainer {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 100px;
+}
+
+.shortIntroductionContainer {
+    display: flex;
+    align-items: center,
+}
+
+.PictureSocialContainer {
+    position: relative;
+    top: 206px;
+}
+
+.buttonIntroduction {
+    width: 155px;
+    height: 54px;
+    background-color: #70E61C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 21px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+
+    transition: transform 0.1s ease-out;
+
+    &:hover {
+        transform: scale(1.2);
+        background-color: #9747FF;
+    }
+}
+
+.rampe {
+    position: absolute;
+    right: 0;
+    top: 476px;
+    width: 100%;
+}
+
+.textAndButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.emailButton, .githubButton, .linkedinButton {
+    margin-left: 40px;
+}
+
+.githubButton {
+    transition: transform 0.1s ease-out;
+    transform-origin: -10% 0%;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.3);
+    }
+}
+
+.emailButton {
+    transition: transform 0.1s ease-out;
+    transform-origin: -10% 0%;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.3);
+    }
+}
+
+.linkedinButton {
+    transition: transform 0.1s ease-out;
+    transform-origin: -10% 0%;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.3);
+    }
+}
+
+.wrap {
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    right: 43px;
+    
+}
+
+.wrapChild {
+    display: flex;
+}
+
+.iam {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 63px;
+    transform: rotate(270deg);
+    color: white;
+}
+
+.name {
+    font-family: "Open Sans", sans-serif; 
+    font-weight: bold;
+    font-size: 71px;
+    color: white;
+}
+
+.frontend {
+    font-family: "Open Sans", sans-serif;
+    font-size: 53px;
+
+    color: #9747FF;
+}
