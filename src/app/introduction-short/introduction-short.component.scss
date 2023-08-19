@@ -6,7 +6,20 @@
 }
 
 .mainShadows {
-    width: 682px;}
+    width: 951px;
+    position: absolute;
+}
+
+.PictureShadowContainer {
+position: relative;
+}
+
+.portfolioMain {
+    position: absolute;
+    bottom: 21%;
+    width: 600px;
+    left: 154px;
+}
 
 .introductionShortContainer {
     display: flex;
@@ -15,16 +28,31 @@
 .socialMediaContainer {
     display: flex;
     align-items: center;
-    position: relative;
-    top: 100px;
+    position: absolute;
+    bottom: -50px;
+    z-index: 1;
+    left: 0;
 }
 
 .shortIntroductionContainer {
     display: flex;
-    align-items: center,
+    align-items: center;
+    position: relative;
+    left: 398px;
+    z-index: 1;
 }
 
+
+
+/*.shortIntroductionContainer {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 460px;
+}*/
+
 .PictureSocialContainer {
+    display: flex;
     position: relative;
     top: 206px;
 }
@@ -40,6 +68,8 @@
     color: white;
     border-radius: 10px;
     cursor: pointer;
+    margin-top: 65px;
+
 
     transition: transform 0.1s ease-out;
 
@@ -52,9 +82,11 @@
 .rampe {
     position: absolute;
     right: 0;
-    top: 476px;
+    top: 410px;
     width: 100%;
+    z-index: 1;
 }
+
 
 .textAndButton {
     display: flex;
@@ -101,8 +133,7 @@
     align-items: center;
     position: relative;
     flex-direction: column;
-    right: 43px;
-    
+    right: -481px;
 }
 
 .wrapChild {
@@ -111,21 +142,355 @@
 
 .iam {
     font-family: 'Open Sans', sans-serif;
-    font-size: 63px;
+    font-size: 72px;
     transform: rotate(270deg);
     color: white;
+    display: flex;
+    align-items: center;
 }
 
 .name {
     font-family: "Open Sans", sans-serif; 
     font-weight: bold;
-    font-size: 71px;
+    font-size: 72px;
     color: white;
 }
 
 .frontend {
     font-family: "Open Sans", sans-serif;
-    font-size: 53px;
-
+    font-size: 55px;
     color: #9747FF;
+}
+//1924px
+@media(max-width: 1860px) {
+
+    .iam {
+        font-size: 64px;
+    }
+
+    .name {
+        font-size: 64px;
+    }
+
+    .frontend {
+        font-size: 48px;
+    }
+
+    .wrap {
+        right: -375px;
+    }
+
+}
+
+
+@media(max-width: 1570px) {
+
+    .PictureShadowContainer {
+        right: 48px;
+    }
+
+    .portfolioMain {
+        width: 540px;
+        bottom: 30%;
+    }
+
+    .mainShadows {
+        width: 858px;
+    }
+
+    .wrap {
+        right: -289px;
+    }
+
+}
+
+
+@media(max-width: 1500px) {
+
+    .portfolioMain {
+        width: 450px;
+        bottom: 31%;
+    }
+
+    .mainShadows {
+        width: 780px;
+        top: 50px;
+    }
+
+    .iam {
+        font-size: 57px;
+    }
+
+    .name {
+        font-size: 57px;
+    }
+
+    .frontend {
+        font-size: 43px;
+    }
+
+    .buttonIntroduction {
+        width: 146px;
+        height: 50px;
+    }
+
+    .wrap {
+        right: -254px;
+    }
+
+    .socialMediaContainer {
+        bottom: -50px;
+    }
+
+}
+
+@media(max-width: 1390px) {
+
+    .portfolioMain {
+        width: 392px;
+        bottom: 35%;
+    }
+
+    .mainShadows {
+        width: 686px;
+        top: 79px;
+        left: 6px;
+    }
+
+    .iam {
+        font-size: 50px;
+    }
+
+    .name {
+        font-size: 50px;
+    }
+
+    .frontend {
+        font-size: 38px;
+    }
+
+    .buttonIntroduction {
+        width: 144px;
+        height: 48px;
+        margin-top: 28px;
+    }
+
+    .wrap {
+        right: -175px;
+    }
+
+}
+
+@media(max-width: 1250px) {
+
+    .portfolioMain {
+        left: 32%;
+    }
+
+    .mainShadows {
+        position: relative;
+        top: -125px;
+        left: 54px;
+    }
+
+    .introductionShortContainer {
+        display: flex;
+        flex-direction: column;
+    align-items: center;
+    }
+
+    .shortIntroductionContainer {
+       position: unset;
+        
+    }
+
+    .wrap {
+        position: unset;
+        
+    }
+
+    .shortIntroductionContainer {
+       
+       position: unset;
+        }
+
+        .rampe {
+            top: 282px;
+        }
+
+        .socialMediaContainer {
+            bottom: 16px;
+        }
+
+}
+
+
+@media(max-width: 1135px) {
+
+    .rampe {
+        top: 317px;
+    }
+
+}
+
+@media(max-width: 1000px) {
+
+    .rampe {
+        top: 350px;
+    }
+
+}
+
+
+
+@media(max-width: 875px) {
+
+    .rampe {
+        top: 388px;
+    }
+
+}
+
+@media(max-width: 720px) {
+
+    .rampe {
+        top: 324px;
+    }
+
+    .mainShadows {
+        width: 522px;
+    }
+
+    .portfolioMain {
+        width: 326px;
+    }
+
+    .wrap {
+        margin-top: 100px;
+    }
+
+}
+
+@media(max-width: 565px) {
+
+    .rampe {
+        top: 322px;
+    }
+
+    .portfolioMain {
+        width: 262px;
+    }
+
+    .mainShadows {
+        width: 453px;
+        left: 48px;
+    }
+
+    .wrap {
+        position: unset;
+        margin-top: 65px;
+    }
+
+    .iam {
+        font-size: 42px;
+    }
+
+    .name {
+        font-size: 42px;
+    }
+
+    .frontend {
+        font-size: 31px;
+    }
+
+    .socialMediaContainer {
+        bottom: 222px;
+    }
+
+}
+
+
+@media(max-width: 470px) {
+
+    .rampe {
+        top: 217px;
+    }
+
+    .mainShadows {
+        width: 316px;
+        left: 48px;
+    }
+
+    .portfolioMain {
+        width: 201px;
+        left: 34%;
+        bottom: 51%;
+    }
+
+    .wrap {
+        position: unset;
+        margin-top: 60px;
+    }
+
+    .iam {
+        font-size: 30px;
+    }
+
+    .name {
+        font-size: 30px;
+    }
+
+    .frontend {
+        font-size: 23px;
+    }
+
+    .buttonIntroduction {
+        width: 126px;
+        height: 51px;
+    }
+
+    .socialMediaContainer {
+        bottom: 375px;
+    }
+
+}
+
+@media(max-width: 427px) {
+
+    .rampe {
+        top: 235px;
+    }
+
+    .wrap {
+        margin-top: 77px;
+    }
+
+}
+
+@media(max-width: 350px) {
+
+    .rampe {
+        top: 255px;
+    }
+
+    .iam {
+        font-size: 26px;
+    }
+
+    .name {
+        font-size: 26px;
+    }
+
+    .frontend {
+        font-size: 20px;
+    }
+
+    .socialLine {
+        width: 54px;
+    }
+
+    .linkedinButton {
+        margin-left: 30px;
+    }
+
 }

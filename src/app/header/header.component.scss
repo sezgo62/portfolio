@@ -2,10 +2,15 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .headerContainer {
     width: 100%;
     height: 56px;
-    position:fixed;
+    position: fixed;
     top: 0;
 
     display: flex;
@@ -22,6 +27,8 @@ body {
     font-size: 31px;
     font-weight: bold;
 }
+
+
 
 .aboutmeContainer {
     display: flex;
@@ -87,8 +94,189 @@ body {
     }
 }
 
+.contact {
+    cursor: pointer;
+
+    &:hover {
+        color: #70E61C;
+    }
+}
+
+
+.marginBottom {
+    margin-bottom: 20px;
+}
+
 .selectionContainer {
     display: flex;
     margin-right: 126px;
     font-size: 26px;
+}
+
+.selectionContainerPopup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 26px;
+}
+
+.popupButton {
+    margin-right: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+
+@media(max-width: 850px) {
+
+    .selectionContainer {
+        display: none;
+    }
+
+    .headerNamePortfolio {
+        margin-left: 120px;
+        font-size: 31px;
+        font-weight: bold;
+        position: absolute;
+        top: 6px;
+        left: -1px;
+    }
+
+    .close {
+        margin-right: 23px;
+        position: absolute;
+        top: 10px;
+        right: -1px;
+        filter: invert(1);
+        cursor: pointer;
+    }
+
+    .closePopupWindow {
+        height: 100vh;
+        width: 100%;
+
+        //background-color: #141D2F;
+        position: absolute;
+
+        bottom: 0;
+        top: 0;
+        right: -927px;
+
+        //left: 0;
+        //filter: opacity(0.6);
+        animation-direction: reverse;
+        animation-delay: 0ms;
+        animation: popup2 1s 0.2s both;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    @keyframes popup2 {
+        0% {
+
+            right: 0px;
+
+        }
+
+        100% {
+
+            left: 2000px;
+        }
+    }
+
+    /*.closePopupWindow {
+        height: 100vh;
+        width: 100%;
+
+        background-color: #141D2F;
+        position: absolute;
+
+        bottom: 0;
+        top: 0;
+        left: 0px;
+
+        //left: 0;
+        filter: opacity(0.6);
+        animation-direction: reverse;
+        animation-delay: 0ms;
+        animation: popup2 1s 0.2s both;
+    }
+
+    @keyframes popup2 {
+        0% {
+            left: 0px;
+
+
+        }
+        100% {
+            right: -927px;
+        }
+    }*/
+
+
+    //////////////////////
+    .popupButton {
+        display: unset;
+    }
+
+
+    .popupWindow {
+        height: 100vh;
+        width: 100%;
+
+        //background-color: #141D2F;
+        position: absolute;
+
+        bottom: 0;
+        top: 0;
+        right: -927px;
+
+        //filter: opacity(0.6);
+        animation-direction: normal;
+        animation-delay: 0ms;
+        animation: popup 1s 0.2s both;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    @keyframes popup {
+        0% {
+            left: 2000px;
+
+
+        }
+
+        100% {
+            right: 0px;
+
+        }
+    }
+
+
+}
+
+
+@media(max-width: 500px) {
+    .headerName {
+        margin-left: 40px;
+    }
+
+    .headerNamePortfolio {
+        margin-left: 120px;
+        font-size: 31px;
+        font-weight: bold;
+        position: absolute;
+        top: 6px;
+        left: -80px;
+    }
+
+    .scrollDownContainer {
+        display: none;
+    }
+
+}
+
+.d-none {
+    display: none;
 }

@@ -11,6 +11,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { PortfolioProjectsComponent } from './portfolio-projects/portfolio-projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { EndBarComponent } from './end-bar/end-bar.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     IntroductionLongComponent,
     SkillsComponent,
     PortfolioProjectsComponent,
-    ContactComponent
+    ContactComponent,
+    EndBarComponent
   ],
   imports: [
     BrowserModule,

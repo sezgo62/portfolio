@@ -51,4 +51,56 @@ export class HeaderComponent {
     }
   }
 
+  openPopup() {
+    let popupWindowTest = document.getElementById('popupWindow');
+    let popupButton = document.getElementById('popupButton');
+
+    popupWindowTest.classList.remove('d-none');
+    popupButton.classList.add('d-none');
+
+
+    document.getElementById('popupWindow').classList.add('popupWindow');
+
+
+  }
+
+  closePupup() {
+    let popupWindowTest = document.getElementById('popupWindow');
+    let popupButton = document.getElementById('popupButton');
+
+
+
+    popupWindowTest.classList.remove('popupWindow');
+    popupWindowTest.classList.add('d-none');
+    popupWindowTest.classList.remove('d-none');
+
+    popupButton.classList.remove('d-none');
+
+
+    document.getElementById('popupWindow').classList.add('closePopupWindow');
+  }
+
+  removeLines() {
+  let line0 = document.getElementById('line0');
+  let line1 = document.getElementById('line1');
+  let line2 = document.getElementById('line2');
+
+  let thatButton0 = document.getElementById('button0');
+  let thatButton1 = document.getElementById('button1');
+  let thatButton2 = document.getElementById('button2');
+
+
+  line0.classList.add('d-none');
+  line1.classList.add('d-none');
+  line2.classList.add('d-none');
+
+  thatButton0.classList.remove('green');
+  thatButton1.classList.remove('green');
+  thatButton2.classList.remove('green');
+
+
+  }
+
 }
+
+

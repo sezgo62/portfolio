@@ -1,22 +1,56 @@
 <div class="headerContainer">
 
-    <span class="headerName">Sezgin</span>
+    <a href="#" (click)="removeLines()">  <span class="headerName">Sezgin</span> </a>
 
     <div class="selectionContainer">
 
         <div class="aboutmeContainer">
-            <span (click)="assignColor(0)" id="button0" class="aboutme">About me</span>
+            <a href="#about"> <span (click)="assignColor(0)" id="button0" class="aboutme">About me</span></a>
             <img id="line0" class="headerLineAboutme d-none" src="assets/img/headerLine.png">
         </div>
 
         <div class="skillContainer">
-            <span (click)="assignColor(1)" id="button1" class="skills">Skills</span>
+            <a href="#skills"> <span (click)="assignColor(1)" id="button1" class="skills">Skills</span> </a>
             <img id="line1" class="headerLineSkills d-none" src="assets/img/headerLine.png">
         </div>
 
         <div class="portfolioContainer">
-            <span (click)="assignColor(2)" id="button2" class="portfolio">Portfolio</span>
+            <a href="#portfolio"> <span (click)="assignColor(2)" id="button2" class="portfolio">Portfolio</span> </a>
             <img id="line2" class="headerLinePortfolio d-none" src="assets/img/headerLine.png">
+        </div>
+
+
+    </div>
+
+    <img (click)="openPopup()" id="popupButton" class="popupButton" src="assets/img/popupButton.png">
+
+    <div (click)="closePupup()" id="popupWindow" class="d-none">
+
+
+
+        <div class="selectionContainerPopup">
+
+            <a href="#"> <span class="headerNamePortfolio">Sezgin</span> </a>
+
+            <img class="close" src="assets/img/close.png">
+
+
+            <div class="aboutmeContainerPortfolio marginBottom">
+                <a href="#about"> <span id="button0" class="aboutmePortfolio">About me</span></a>
+            </div>
+    
+            <div class="skillContainerPortfolio marginBottom">
+                <a href="#skills"> <span id="button1" class="skillsPortfolio">Skills</span> </a>
+            </div>
+    
+            <div class="portfolioContainerPortfolio marginBottom">
+                <a href="#portfolio"> <span id="button2" class="portfolioPortfolio">Portfolio</span> </a>
+            </div>
+    
+            <div class="contactContainerPortfolio">
+                <a href="#contact"> <span id="button3" class="contactPortfolio">contact</span> </a>
+            </div>
+    
         </div>
 
     </div>

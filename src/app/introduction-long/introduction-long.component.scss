@@ -1,17 +1,29 @@
 .introductionContainer {
-    //height: 100vh;
-    position: relative;
-    top: 340px;
+    z-index: 1;
+    margin-top: 270px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    position: relative;
 }
 
 .introductionTextContainer {
     display: flex;
     flex-direction: column;
     margin-left: 100px;
+}
+
+.purpleShadow {
+    position: absolute;
+    right: 0;
+    bottom: 13%;
+    height: 157%;
+    z-index: -1;
 }
 
 .aboutMe {
@@ -67,4 +79,147 @@
     width: 300px;
     height: 300px;
     border-radius: 100%;
+}
+
+.scrollDownContainer {
+    position: absolute;
+    left: 87%;
+    top: -402px;
+    transform: rotate(90deg);
+    font-size: 35px;
+    width: 250px;
+
+    display: flex;
+    align-items: flex-end;
+}
+
+.scrollDownText {
+    margin-right: 7px;
+}
+
+.scrollDownPortfolio {
+    transform: rotate(270deg);
+    width: 32px;
+    height: 35px;
+}
+
+@media(max-width: 1250px) {
+    .scrollDownContainer {
+        left: 80%;
+    }
+}
+
+
+
+
+@media(max-width: 1330px) {
+    .introductionText1 {
+        font-size: 14px;
+
+    }
+
+    .profilePicture {
+        width: 200px;
+        height: 201px;
+    }
+
+    .introductionText2 {
+        font-size: 14px;
+    }
+
+    .roundContainer {
+        width: 200px;
+        height: 200px;
+    }
+
+    .lineImage {
+        width: 200px;
+        height: 4px;
+    }
+
+}
+
+@media(max-width: 1130px) {
+    .lineImage {
+        width: 80px;
+        height: 4px;
+    }
+
+    .introductionText1 {
+        font-size: 13px;
+
+    }
+
+    .introductionText2 {
+        font-size: 13px;
+    }
+
+
+    .introductionTextContainer {
+        margin-left: 45px;
+        width: 54%;
+    }
+
+    .aboutMe {
+        font-size: 70px;
+    }
+}
+
+@media(max-width: 800px) {
+
+    .scrollDownContainer {
+        display: none;
+     }
+
+    .introductionContainer {
+        justify-content: center;
+    }
+
+    .testContainer {
+        display: none;
+    }
+}
+
+@media(max-width: 630px) {
+    .introductionTextContainer {
+        margin-left: unset;
+        width: 368px;
+    }
+
+}
+
+@media(max-width: 630px) {
+
+    .purpleShadow {
+        right: 0;
+        bottom: 32%;
+        height: 100%;
+        width: 49%;
+    }
+
+    .aboutMe {
+        font-size: 55px;
+        text-align: center;
+    }
+
+    .introductionTextContainer {
+        width: 280px;
+
+    }
+
+}
+
+@media(max-width: 565px) {
+
+    .introductionContainer {
+        margin-top: 0;
+    }
+}
+
+@media(max-width: 470px) {
+
+    .introductionContainer {
+        margin-top: -125px;
+    }
+
 }

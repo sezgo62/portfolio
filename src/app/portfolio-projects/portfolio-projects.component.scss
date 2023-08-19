@@ -4,13 +4,28 @@
     margin-bottom: 148px;
 }
 
-.portfolioProjectsBody {
-    position: relative;
-    top: 816px;
+.portfolioProjectsBody {}
+
+.purpleShadowLeft {
+    position: absolute;
+    left: 0;
+    width: 46%;
+    height: 45%;
+    bottom: 23%;
+    z-index: -1;
+}
+
+.greenShadowRight {
+    position: absolute;
+    right: 0;
+    width: 28%;
+    height: 41%;
+    z-index: -1;
 }
 
 .test {
-    height: 100vh;
+    margin-top: 150px;
+    position: relative;
 }
 
 .portfolioLine1 {
@@ -36,7 +51,7 @@
     justify-content: flex-end;
 }
 
-.portfolioHeaderText {
+.portfolioHeaderTextContainer {
     display: flex;
     justify-content: center;
     color: white;
@@ -45,7 +60,7 @@
 .livesTest {
     width: 155px;
     height: 54px;
-    background-color:#9747FF ;
+    background-color: #9747FF;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,56 +92,67 @@
     transition: transform 0.1s ease-out;
 
     &:hover {
-        
+
         background-color: #70E61C;
     }
 }
 
-.project1 {
+.project {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 228px;
 }
 
+.projectJoin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 228px;
+}
+
+.projectQuiz {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 228px;
+}
+
+
 .elpolloProjectImage {
     width: 343px;
     height: 225px;
     margin-right: 20%;
-    margin-left: 10%;
 }
 
 .joinProject {
     width: 343px;
     height: 225px;
-    margin-right: 1%;
-    margin-left: 10%;
+    margin-left: 20%;
 }
 
 .ringProjectImage {
     width: 343px;
     height: 225px;
     margin-right: 20%;
-    margin-left: 10%;
 }
 
 .quizProjectImage {
     width: 343px;
     height: 225px;
-    margin-right: 1%;
     margin-left: 10%;
 }
 
-.pokeProjectImage{
+.pokeProjectImage {
     width: 343px;
     height: 225px;
     margin-right: 20%;
-    margin-left: 10%;
 }
 
 .ProjectText {
     display: flex;
     flex-direction: column;
+    margin-right: 2%;
 }
 
 .buttons {
@@ -151,6 +177,134 @@
 }
 
 .projectContainer {
-    margin-left: 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 1300px) {
+
+    .portfolioText {
+        font-size: 70px;
+    }
+
+    .portfolioLine1 {
+        width: 5%;
+    }
+
+    .portfolioLine2 {
+        width: 18%;
+    }
+
+    .portfolioHeader {
+        margin-bottom: 30px;
+    }
+
+    .portfolioHeader {
+
+        margin-bottom: 30px;
+    }
+
+}
+
+@media(max-width: 960px) {
+
+    .project {
+        width: 30%;
+    }
+
+    .projectQuiz {
+        width: 30%;
+    }
+
+    .projectJoin {
+        width: 30%;
+    }
+
+}
+
+@media(max-width: 800px) {
+
+    .project {
+        flex-direction: column;
+    }
+
+
+    .projectQuiz {
+        flex-direction: column-reverse;
+    }
+
+    .projectJoin {
+        flex-direction: column-reverse;
+    }
+
+    .ProjectText {
+
+        align-items: center;
+    }
+
+    .joinProject,
+    .elpolloProjectImage,
+    .ringProjectImage,
+    .quizProjectImage,
+    .pokeProjectImage {
+        margin-left: unset;
+        margin-right: unset;
+        margin-bottom: 80px;
+    }
+
+}
+
+@media(max-width: 640px) {
+
+    .portfolioText {
+        font-size: 49px;
+    }
+
+    .portfolioHeaderText {
+        width: 50%;
+    }
+
+}
+
+@media(max-width: 640px) {
+
+    .purpleShadowLeft {
+        left: 0;
+        width: 100%;
+        height: 12%;
+        bottom: 30%;
+    }
+
+    .greenShadowRight {
+        width: 59%;
+        height: 13%;
+        bottom: -287px;
+    }
+
+    .joinProject,
+    .elpolloProjectImage,
+    .ringProjectImage,
+    .quizProjectImage,
+    .pokeProjectImage {
+        width: 250px;
+        height: 180px;
+    }
+
+    .ProjectText {
+        width: 282%;
+    }
+
+    .livesTest {
+        width: 129px;
+        height: 54px;
+        margin-right: 16px;
+    }
+
+    .gitHub {
+        width: 129px;
+        height: 54px;
+    }
 
 }

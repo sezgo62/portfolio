@@ -1,13 +1,13 @@
 .contactContainer {
     height: 100vh;
+    display: flex;
     position: relative;
-    top: 2700px;
 }
 
 .contactTextContainer {
     display: flex;
-    flex-direction: column;
     color: white;
+    width: 100%;
 }
 
 .contactBold {
@@ -17,5 +17,285 @@
 .contactInputContainer {
     display: flex;
     flex-direction: column;
+    margin-top: 150px;
+    margin-right: 17%;
+    align-items: center;
+}
+
+.contactHeaderTextContainer {
+    display: flex;
+    top: 0;
+    left: 0;
+    font-size: 17px;
+    flex-direction: column;
+    margin-left: 40px;
+}
+
+.contactSpanContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.contactText {
+    font-size: 100px;
+}
+
+.contactLine {
+    width: 58px;
+    height: 4px;
+    margin-top: 140px;
+}
+
+
+.name {
+    background-color: #141D2F;
+    border: solid 1px #9747FF;
+    width: 346%;
+    height: 41px;
+    border-radius: 7px;
+    margin-bottom: 35px;
+
+    &:hover {
+        border: solid 1px #70E61C;
+        cursor: pointer;
+    }
+}
+
+.email {
+    background-color: #141D2F;
+    border: solid 1px #9747FF;
+    width: 346%;
+    height: 41px;
+    border-radius: 7px;
+    margin-bottom: 35px;
+
+    &:hover {
+        border: solid 1px #70E61C;
+        cursor: pointer;
+
+    }
+}
+
+.message {
+    background-color: #141D2F;
+    border: solid 1px #9747FF;
+    width: 346%;
+    height: 200px;
+    border-radius: 7px;
+    margin-bottom: 50px;
+
+    &:hover {
+        border: solid 1px #70E61C;
+        cursor: pointer;
+
+    }
+}
+
+.sendMessage {
+    width: 155px;
+    height: 54px;
+    background-color: #70E61C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 21px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+
+    transition: transform 0.1s ease-out;
+
+    &:hover {
+        transform: scale(1.2);
+        background-color: #9747FF;
+    }
+}
+
+.goUpDiv {
+    border-radius: 100%;
+    position: absolute;
+    right: 100px;
+    bottom: 250px;
+    width: 40px;
+    height: 40px;
+    border: solid 1px white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        border: solid 1px #70E61C;
+        cursor: pointer;
+    }
+}
+
+.goUp {
+    width: 25px;
+    filter: invert(60%) hue-rotate(400deg);
+}
+
+.green-arrow path {
+    fill: white;
+
+    &:hover {
+        fill: green;
+        cursor: pointer;
+    }
+}
+
+.green-arrow path:hover {
+    fill: green;
+}
+
+a:hover .green-arrow path {
+    fill: #70E61C;
+    cursor: pointer;
+}
+
+.purpleShadowLeft2 {
+    position: absolute;
+    left: 0;
+    width: 46%;
+    height: 80%;
+    bottom: -30%;
+    z-index: -1;
+}
+
+
+@media(max-width: 1230px) {
+
+    .contactHeaderTextContainer {
+        font-size: 14px;
+    }
+
+    .contactText {
+        font-size: 80px;
+    }
+
+    .contactLine {
+        margin-top: 115px;
+    }
+
+    .contactInputContainer {
+        margin-right: 16%;
+    }
+
+        .name {
+            width: 270%;
+        }
+
+        .email {
+            width: 270%;
+        }
+
+        .message {
+            width: 270%;
+        }
+
+}
+
+@media(max-width: 1040px) {
+
+    .contactHeaderTextContainer {
+        margin-left: 12px;
+    }
+
+    .contactHeaderTextContainer {
+        font-size: 13px;
+    }
+
+    .contactText {
+        font-size: 55px;
+    }
+
+    .contactLine {
+        margin-top: 75px;
+        width: 31px;
+    }
+
+    .contactContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactInputContainer {
+        margin-top: 130px;
+    }
     
+    .goUpDiv {
+        bottom: 48px;
+     }
+    
+     .contactInputContainer {
+        margin-right: unset;
+     }
+
+
+}
+
+
+@media(max-width: 550px) {
+
+    .purpleShadowLeft2 {
+        width: 63%;
+        height: 60%;
+        bottom: -30%;
+    }
+
+    .goUpDiv {
+        right: 37px;
+}
+
+.name {
+    width: 200%;
+}
+
+.email {
+    width: 200%;
+}
+
+.message {
+    width: 200%;
+}
+
+}
+
+@media(max-width: 400px) {
+
+    .name {
+        width: 160%;
+    }
+    
+    .email {
+        width: 160%;
+    }
+    
+    .message {
+        width: 160%;
+    }
+}
+
+
+@media(max-width: 430px) {
+
+    .goUpDiv {
+        bottom: 36px;
+    }
+
+}
+
+
+@media(max-width: 380px) {
+
+    .goUpDiv {
+        bottom: 74px;
+        right: 15px;
+    }
+
+    .contactInputContainer {
+        margin-top: 90px;
+    }
+
 }

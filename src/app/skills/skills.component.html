@@ -1,12 +1,20 @@
-<div class="skillsContainer">
+<div id="skills" class="skillsContainer">
+
+    <div class="connectMe2">Get in touch</div>
+
 
     <div class="iconPool" id="iconPool">
 
         <div *ngFor="let elements of iconsObjects" class="iconContainer">
-            <img class="iconImages hvr-wobble-to-top-right" src="assets/icons/{{elements['image']}}.png">
-            <span class="iconName">{{elements['iconName']}}</span>
+            <div class="iconContainerBox">
+
+                <img class="iconImages hvr-wobble-to-top-right" src="assets/icons/{{elements['image']}}.png">
+                <span class="iconName">{{elements['iconName']}}</span>
+            </div>
+
         </div>
     </div>
+
 
     <div class="skillsTextContainer">
 
@@ -15,7 +23,7 @@
             <img class="skillsLine" src="assets/icons/skillsLine.png">
         </div>
 
-        <span class="skillText">I have gained experience in building projects with various front end technologies
+        <span class="skillText">I have gained experience in building projects with various front <br>end technologies
             and concepts.</span>
 
         <div class="connectMe">Get in touch</div>
@@ -23,5 +31,6 @@
     </div>
 
 
+    <img class="greenShadow" src="assets/img/greenShadow.png">
 
 </div>
