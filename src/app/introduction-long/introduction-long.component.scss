@@ -1,11 +1,16 @@
+app-introduction-long {
+    display: flex;
+    justify-content: center;
+}
+
+
 .introductionContainer {
     z-index: 1;
     margin-top: 270px;
-    width: 100%;
+    width: 1440px;
     display: flex;
     justify-content: space-between;
     color: white;
-    width: 100%;
     display: flex;
     justify-content: space-between;
     color: white;
@@ -103,6 +108,20 @@
     height: 35px;
 }
 
+@media(min-width: 1440px) {
+
+    .purpleShadow {
+        right: 0;
+        bottom: -95%;
+        height: 106%;
+    }
+
+    .introductionContainer {
+        position: unset;
+    }
+
+}
+
 @media(max-width: 1250px) {
     .scrollDownContainer {
         left: 80%;
@@ -169,7 +188,7 @@
 
     .scrollDownContainer {
         display: none;
-     }
+    }
 
     .introductionContainer {
         justify-content: center;

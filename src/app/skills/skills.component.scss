@@ -1,11 +1,19 @@
+app-skills {
+  display: flex;
+  justify-content: center;
+}
+
 .skillsContainer {
+  width: 1440px;
   margin-top: 270px;
-  position: relative;
   height: 40vh;
   display: flex;
   justify-content: space-between;
   height: 68vh;
+  z-index: 2;
 }
+
+
 
 .skillsTextContainer {
   display: flex;
@@ -17,7 +25,7 @@
 .greenShadow {
   position: absolute;
   left: 0;
-  bottom: -94%;
+  bottom: -231%;
   height: 157%;
   z-index: -1;
 }
@@ -210,6 +218,21 @@
   margin-left: 40px;
 }
 
+@media(min-width: 1920px) {
+  
+
+  .skillsContainer {
+    position: unset;
+  }
+}
+
+@media(max-width: 1920px) {
+
+  .skillsContainer {
+width: 100%;
+  }
+
+}
 
 @media(max-width: 1300px) {
   .iconPool {

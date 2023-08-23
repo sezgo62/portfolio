@@ -1,8 +1,12 @@
+app-introduction-short {
+    display: flex;
+    justify-content: center;
+}
+
 .introductionShortContainer {
     height: 100vh;
-    position: relative;
     top: 100px;
-    width: 100%;
+    width: 1440px;
 }
 
 .mainShadows {
@@ -11,7 +15,7 @@
 }
 
 .PictureShadowContainer {
-position: relative;
+    position: relative;
 }
 
 .portfolioMain {
@@ -94,7 +98,9 @@ position: relative;
     align-items: center;
 }
 
-.emailButton, .githubButton, .linkedinButton {
+.emailButton,
+.githubButton,
+.linkedinButton {
     margin-left: 40px;
 }
 
@@ -150,7 +156,7 @@ position: relative;
 }
 
 .name {
-    font-family: "Open Sans", sans-serif; 
+    font-family: "Open Sans", sans-serif;
     font-weight: bold;
     font-size: 72px;
     color: white;
@@ -161,7 +167,48 @@ position: relative;
     font-size: 55px;
     color: #9747FF;
 }
-//1924px
+
+@media(min-width: 2500px) {
+    .socialMediaContainer {
+        bottom: -100px;
+        left: unset;
+    }
+
+    .introductionShortContainer {
+        position: unset;
+    }
+}
+
+@media(max-width: 4000px) {
+    .rampe {
+        top: -40px;
+    }
+}
+
+@media(max-width: 3700px) {
+    .rampe {
+        top: 28px;
+    }
+}
+
+@media(max-width: 3200px) {
+    .rampe {
+        top: 160px;
+    }
+}
+
+@media(max-width: 2600px) {
+    .rampe {
+        top: 320px;
+    }
+}
+
+@media(max-width: 2000px) {
+    .rampe {
+        top: 460px;
+    }
+}
+
 @media(max-width: 1860px) {
 
     .iam {
@@ -296,31 +343,31 @@ position: relative;
     .introductionShortContainer {
         display: flex;
         flex-direction: column;
-    align-items: center;
+        align-items: center;
     }
 
     .shortIntroductionContainer {
-       position: unset;
-        
+        position: unset;
+
     }
 
     .wrap {
         position: unset;
-        
+
     }
 
     .shortIntroductionContainer {
-       
-       position: unset;
-        }
 
-        .rampe {
-            top: 282px;
-        }
+        position: unset;
+    }
 
-        .socialMediaContainer {
-            bottom: 16px;
-        }
+    .rampe {
+        top: 282px;
+    }
+
+    .socialMediaContainer {
+        bottom: 16px;
+    }
 
 }
 
@@ -404,7 +451,7 @@ position: relative;
     }
 
     .socialMediaContainer {
-        bottom: 222px;
+        bottom: 178px;
     }
 
 }
@@ -450,9 +497,8 @@ position: relative;
     }
 
     .socialMediaContainer {
-        bottom: 375px;
+        bottom: 333px;
     }
-
 }
 
 @media(max-width: 427px) {

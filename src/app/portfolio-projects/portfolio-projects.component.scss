@@ -26,6 +26,7 @@
 .test {
     margin-top: 150px;
     position: relative;
+    z-index: 2;
 }
 
 .portfolioLine1 {
@@ -181,6 +182,39 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+@media(min-width: 1920px) {
+    .test {
+       width: 1440px;
+       position: unset;
+    }
+
+    .purpleShadowLeft {
+        width: 30%;
+        height: 152%;
+        bottom: -328%;
+    }
+
+    .greenShadowRight {
+        width: 23%;
+        bottom: -476%;
+        height: 157%;
+    }
+
+    app-portfolio-projects {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media(max-width: 1920px) {
+
+    .test {
+        width: 100%;
+     }
+
 }
 
 @media(max-width: 1300px) {
